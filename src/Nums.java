@@ -6,7 +6,7 @@ public class Nums {
     private final int N = 24;
     private char[] chars = {'+', '-', '/', '*'};
     private String[] str = new String[7];
-    private Object[] javaScript = new Object[7];
+    private Object javaScript = null;
 
     public boolean option(int one, int two, int three, int four) {
 
@@ -30,9 +30,9 @@ public class Nums {
                         str[6] = one + " " + chars[c] + " " + "(" + two + " " + chars[ch] + " " +
                                 three + ")" + " " + chars[cha] + " " + four;
 
-                        for (int i = 0; i < javaScript.length; i++) {
-                        javaScript[i] = new ScriptEngineManager().getEngineByName("JavaScript").eval(str[i]);
-                            if (javaScript[i].equals(N)) {
+                        for (int i = 0; i < str.length; i++) {
+                        javaScript = new ScriptEngineManager().getEngineByName("JavaScript").eval(str[i]);
+                            if (javaScript.equals(N)) {
                                 System.out.println("Пояснение: " + str[i]);
                                 return true;
                             }
