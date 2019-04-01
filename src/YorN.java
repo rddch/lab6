@@ -1,6 +1,6 @@
 public class YorN {
 
-    public boolean canBeEqualTo24(int[] nums) {
+    public boolean canBeEqualTo24(double[] nums) {
 
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length; j++) {

@@ -8,7 +8,7 @@ public class Main {
 
        Scanner in = new Scanner(System.in);
 
-       int[] array = new int[4];
+       double[] array = new double[4];
        int count = 1;
 
        for (int i = 0; i < 4; i++) {

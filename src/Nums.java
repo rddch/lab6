@@ -3,12 +3,12 @@ import javax.script.ScriptException;
 
 public class Nums {
 
-    private final int N = 24;
+    private final double N = 24.0;
     private char[] chars = {'+', '-', '/', '*'};
     private String[] str = new String[7];
     private Object javaScript = null;
 
-    public boolean option(int one, int two, int three, int four) {
+    public boolean option(double one, double two, double three, double four) {
 
         try {
             for (int c = 0; c < chars.length; c++) {
